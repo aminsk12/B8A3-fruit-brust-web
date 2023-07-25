@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B8A3-fruit-brust-web</title>
+
+    <!--fontawsam link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Tailwind and DasiUI CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class=" container mx-auto">
+        <div class="">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li tabindex="0">
+                      <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Item 3</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn"> <input type="search" name="" id=""> </a>
+                </div>
+              </div>
+    </nav>
+
+
+    <main class=" container mx-auto"> 
+    </div>
+    <div class=""> 
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full  flex flex-col items-center text-center justify-center">
+              <img src="/images/banner1.png" class="w-full relative" />
+              <div class="  absolute text-white font-extrabold">
+                <h1 class="text-7xl">Exotic tastes at your <br> doorstep</h1>
+                <p class=" text-xl mt-6">We supply highly quality organic products</p>
+                <button class="btn btn-active btn-secondary font-extrabold my-7">Shop Now</button>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full flex flex-col items-center text-center justify-center">
+              <img src="/images/banner2.png" class="w-full relativ" />
+              <div class="  absolute text-white font-extrabold">
+                <h1 class="text-7xl">Exotic tastes at your <br> doorstep</h1>
+                <p class=" text-xl mt-6">We supply highly quality organic products</p>
+                <button class="btn btn-active btn-secondary font-extrabold my-7">Shop Now</button>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full flex flex-col items-center text-center justify-center">
+              <img src="/images/banner3.png" class="w-full relitiv" />
+              <div class="  absolute text-white font-extrabold">
+                <h1 class="text-7xl">Exotic tastes at your <br> doorstep</h1>
+                <p class=" text-xl mt-6">We supply highly quality organic products</p>
+                <button class="btn btn-active btn-secondary font-extrabold my-7">Shop Now</button>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full flex flex-col items-center text-center justify-center">
+              <img src="/images/banner4.png" class="w-full relativ" />
+              <div class="  absolute text-white font-extrabold">
+                <h1 class="text-7xl">Exotic tastes at your <br> doorstep</h1>
+                <p class=" text-xl mt-6">We supply highly quality organic products</p>
+                <button class="btn btn-active btn-secondary font-extrabold my-7">Shop Now</button>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    
+    <div class="">
+        <div class="flex  my-16">
+            <div class="flex-1 border-solid">
+                <h3 class="text-6xl font-bold">Deal of the day</h3>
+                <p class="font-bold mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p> 
+            </div>
+            <div class=" flex flex-1/2 text-right gap-11">
+                <div class=" "> 
+                    <h4 class="text-6xl font-bold">20</h4>
+                    <p class="text-center">Days</p>
+                </div>
+                <div class=""> 
+                    <h4 class="text-6xl font-bold">15</h4>
+                    <p class="text-center">Hours</p>
+                </div>
+                <div class=""> 
+                    <h4 class="text-6xl font-bold">12</h4>
+                    <p class="text-center">Minutes</p>
+                </div>
+                <div class=""> 
+                    <h4 class="text-6xl font-bold">23</h4>
+                    <p class="text-center">Seconds</p>
+                </div>
+
+            </div>
+
+            
+        </div>  
+
+
+
+
+        <div class=" flex my-60">
+
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  </div>
+                  <div class="card-actions">
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+                    <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                        </div>
+                    </form>
+                    </dialog>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  </div>
+                  <div class="card-actions">
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+                    <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                        </div>
+                    </form>
+                    </dialog>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  </div>
+                  <div class="card-actions">
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn" onclick="my_modal_3.showModal()">open modal</button>
+                    <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                        </div>
+                    </form>
+                    </dialog>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
+                  </div>
+                  <div class="card-actions">
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn" onclick="my_modal_4.showModal()">open modal</button>
+                    <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                        </div>
+                    </form>
+                    </dialog>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
