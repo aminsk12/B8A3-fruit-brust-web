@@ -14,53 +14,128 @@
 <body>
   <!--NVE CONTAINER-->
     <nav class=" container mx-auto">
-        <div class="">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn"> <input type="search" name="" id=""> </a>
-                </div>
-              </div>
+      <div
+        class="py-3 lg:px-7 dark:bg-gray-800 dark:text-gray-100 lg:bg-[#f85559] rounded-full"
+      >
+        <div class="container flex justify-between h-16 mx-auto">
+          <ul class="hidden space-x-3 lg:flex">
+            <li class="flex">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                class="flex items-center px-4 -mb-1 text-white dark:border-transparent dark:text-violet-400 dark:border-violet-400"
+                >Home</a
+              >
+            </li>
+            <li class="flex">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                class="flex items-center px-4 -mb-1 text-white dark:border-transparent"
+                >About Us</a
+              >
+            </li>
+            <li class="flex">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                class="flex items-center px-4 -mb-1 text-white dark:border-transparent"
+                >Shop</a
+              >
+            </li>
+            <li class="flex">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                class="flex items-center px-4 -mb-1 text-white dark:border-transparent"
+                >All Fruits</a
+              >
+            </li>
+          </ul>
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            aria-label="Back to homepage"
+            class="flex items-center p-2"
+          >
+            <div class="flex items-center gap-1">
+              <img class="w-7 lg:w-14" src="./images/logo.png" alt="" />
+              <p class="font-bold lg:text-white lg:text-4xl">Fruits Burst</p>
+            </div>
+          </a>
+          <div class="flex items-center md:space-x-4">
+            <div class="relative">
+              <span class="absolute inset-y-0 right-3 flex items-center pl-2">
+                <button
+                  type="submit"
+                  title="Search"
+                  class="p-1 focus:outline-none focus:ring"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass hidden md:block lg:block"
+                  ></i>
+                </button>
+              </span>
+              <input
+                type="search"
+                name="Search"
+                placeholder="Search here"
+                class="hidden md:block lg:block px-40 py-3 pl-10 text-sm rounded-full sm:w-auto focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900"
+              />
+            </div>
+          </div>
+          <button
+            title="Open menu"
+            type="button"
+            class="lg:p-4 md:hidden lg:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6 dark:text-gray-100"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+        
     </nav>
 
 
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
   <!--BANNER CONTAINER-->
-    <main class=" container mx-auto"> 
-    <div class=""> 
-        <div class="carousel w-full">
+    <main class=" container mx-auto mt-10"> 
+    <div class="relative "> 
+        <div class="carousel w-full relative">
             <div id="slide1" class="carousel-item relative w-full  flex flex-col items-center text-center justify-center">
               <img src="./images/banner1.png" class="w-full relative" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
@@ -113,184 +188,332 @@
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
+
+
+            
+        </div>
+              <!-- Position relative section start from here -->
+          <div class="absolute -bottom-16 hidden lg:block">
+            <div
+              class="w-4/5 bg-[#fff] mx-auto flex py-12 px-16 shadow-md rounded-lg gap-24 -mr-9"
+            >
+              <div>
+                <img src="./images/fruit1.png" alt="" />
+                <p class="text-center">Grapes</p>
+              </div>
+              <div>
+                <img src="./images/fruit2.png" alt="" />
+                <p class="text-center">Orange</p>
+              </div>
+              <div>
+                <img src="./images/fruit3.png" alt="" />
+                <p class="text-center">Mango</p>
+              </div>
+              <div>
+                <img src="./images/fruit4.png" alt="" />
+                <p class="text-center">Strawberry</p>
+              </div>
+              <div>
+                <img src="./images/fruit5.png" alt="" />
+                <p class="text-center">Pomegranate</p>
+              </div>
+            </div>
           </div>
     </div>
 
 
-    <!--DIL OF THE DAY CONTAINER-->
-    <div class="flex flex-col mb-16">
-        <div class="lg:flex  my-16">
-            <div class="flex-1 border-solid">
-                <h3 class="text-6xl font-bold">Deal of the day</h3>
-                <p class="font-bold mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p> 
-            </div>
-            <div class=" flex flex-1/3 text-right ">
-                <div class=" "> 
-                    <h4 class="text-6xl font-bold">20</h4>
-                    <p class="text-center">Days</p>
-                </div>
-                <div class="w-16"><img src="./images/three-dots.png" alt=""></div>
-                
-                <div class=""> 
-                    <h4 class="text-6xl font-bold">15</h4>
-                    <p class="text-center">Hours</p>
-                </div>
-                <div class="w-16"><img src="./images/three-dots.png" alt=""></div>
-                <div class=""> 
-                    <h4 class="text-6xl font-bold">12</h4>
-                    <p class="text-center">Minutes</p>
-                </div>
-                <div class="w-16"><img src="./images/three-dots.png" alt=""></div>
-                <div class=""> 
-                    <h4 class="text-6xl font-bold">23</h4>
-                    <p class="text-center">Seconds</p>
-                </div>
-
-            </div>
-
-            
-       </div>  
+    
+    
 
 
 
        <!--FROOTS LIST CONTAINER-->
-        <div class="lg:flex justify-center mt-60">
-
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="rating">
-                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
-                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" />
-                  </div>
-                  <div class="card-actions">
-                    <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-                    <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
-                    <form method="dialog" class="modal-box">
-                        <h3 class="font-bold text-lg">Hello!</h3>
-                        <p class="py-4">Press ESC key or click the button below to close</p>
-                        <div class="modal-action">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
-                        </div>
-                    </form>
-                    </dialog>
-                  </div>
-                </div>
-              </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-green-500" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-green-500" />
-                  </div>
-                  <div class="card-actions">
-                    <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
-                    <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
-                    <form method="dialog" class="modal-box">
-                        <h3 class="font-bold text-lg">Hello!</h3>
-                        <p class="py-4">Press ESC key or click the button below to close</p>
-                        <div class="modal-action">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
-                        </div>
-                    </form>
-                    </dialog>
-                  </div>
-                </div>
-              </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="rating">
-                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-green-500" checked />
-                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-green-500" />
-                  </div>
-                  <div class="card-actions">
-                    <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn" onclick="my_modal_3.showModal()">open modal</button>
-                    <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
-                    <form method="dialog" class="modal-box">
-                        <h3 class="font-bold text-lg">Hello!</h3>
-                        <p class="py-4">Press ESC key or click the button below to close</p>
-                        <div class="modal-action">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
-                        </div>
-                    </form>
-                    </dialog>
-                  </div>
-                </div>
-              </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="rating">
-                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" checked />
-                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
-                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
-                  </div>
-                  <div class="card-actions">
-                    <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn" onclick="my_modal_4.showModal()">open modal</button>
-                    <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
-                    <form method="dialog" class="modal-box">
-                        <h3 class="font-bold text-lg">Hello!</h3>
-                        <p class="py-4">Press ESC key or click the button below to close</p>
-                        <div class="modal-action">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
-                        </div>
-                    </form>
-                    </dialog>
-                  </div>
-                </div>
-              </div>
-
+       <section class="container mx-auto px-10 lg:mt-20">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div class="w-full text-center lg:text-left lg:w-2/4 space-y-3">
+            <h1 class="text-4xl font-bold">Deal of the day</h1>
+            <p class="text-sm">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex items-center gap-6 mt-5 lg:mt-0">
+            <div>
+              <h1 class="font-bold text-xl lg:text-5xl">29</h1>
+              <p class="text-center">Days</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+              <h1 class="font-bold text-xl lg:text-5xl">15</h1>
+              <p class="text-center">Hours</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+              <h1 class="font-bold text-xl lg:text-5xl">25</h1>
+              <p class="text-center">Minutes</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+              <h1 class="font-bold texl-xl lg:text-5xl">08</h1>
+              <p class="text-center">Seconds</p>
+            </div>
+          </div>
         </div>
 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div class="border-2 p-12 rounded-lg">
+            <div class="space-y-3 text-center">
+              <img class="mx-auto" src="./images/fruit6.png" alt="" />
+              <h3 class="font-bold">12.90$ - 18.85$</h3>
+              <hr />
+              <p class="">Apples</p>
+            </div>
+            <div class="mt-6 text-center">
+              <i class="fa-solid fa-star text-[#F85559]"></i>
 
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i
+                class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+              ></i>
+              <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
+              <!-- <p class="text-[#f85559] mt-8">Details</p> -->
+              <!-- Open the modal using ID.showModal() method -->
+              <div class="mt-8">
+                <button
+                  class="text-[#f85559] font-bold"
+                  onclick="my_modal_1.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center">
+                      <img class="" src="./images/fruit6.png" alt="" />
+                    </div>
+                    <h3 class="font-bold text-lg mt-3 lg:mt-6">Apple</h3>
+                    <p class="lg:py-4">
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
 
-        <button class="btn ">Shop All</button>
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+                    ></i>
+                    <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
+                    <div class="mt-3 lg:mt-10">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="px-4 lg:px-7 py-3 lg:py-5 rounded-lg border-solid border-2 border-[#f85559] mr-8"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="px-4 lg:px-7 py-3 lg:py-5 rounded-lg text-white bg-[#f85559]"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <div class="border-2 p-12 rounded-lg">
+            <div class="space-y-3 text-center">
+              <img class="mx-auto" src="./images/fruit7.png" alt="" />
+              <h3 class="font-bold">15.90$ - 20.05$</h3>
+              <hr />
+              <p class="">Orange</p>
+            </div>
+            <div class="mt-6 text-center">
+              <i class="fa-solid fa-star text-[#F85559]"></i>
 
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i
+                class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+              ></i>
+              <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
+              <!-- <p class="text-[#f85559] mt-8">Details</p> -->
 
+              <div class="mt-8">
+                <button
+                  class="text-[#f85559] font-bold"
+                  onclick="my_modal_2.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center">
+                      <img class="" src="./images/fruit7.png" alt="" />
+                    </div>
+                    <h3 class="font-bold text-lg mt-3 lg:mt-6">Orange</h3>
+                    <p class="lg:py-4">
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
 
-    </div>
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+                    ></i>
+                    <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
+                    <div class="mt-3 lg:mt-10">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="px-7 py-4 lg:py-5 rounded-lg border-solid border-2 border-[#f85559] mr-8"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="px-7 py-4 lg:py-5 rounded-lg text-white bg-[#f85559]"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <div class="border-2 p-12 rounded-lg">
+            <div class="space-y-3 text-center">
+              <img class="mx-auto" src="./images/fruit8.png" alt="" />
+              <h3 class="font-bold">20.90$ - 25.45$</h3>
+              <hr />
+              <p class="">Red Dragon</p>
+            </div>
+            <div class="mt-6 text-center">
+              <i class="fa-solid fa-star text-[#F85559]"></i>
 
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i
+                class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+              ></i>
+              <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
 
+              <div class="mt-8">
+                <button
+                  class="text-[#f85559] font-bold"
+                  onclick="my_modal_3.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_3" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center">
+                      <img class="" src="./images/fruit8.png" alt="" />
+                    </div>
+                    <h3 class="font-bold text-lg mt-3 lg:mt-6">Red Dragon</h3>
+                    <p class="lg:py-4">
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
 
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+                    ></i>
+                    <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
+                    <div class="mt-3 lg:mt-10">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="px-7 py-4 lg:py-5 rounded-lg border-solid border-2 border-[#f85559] mr-8"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="px-7 py-4 lg:py-5 rounded-lg text-white bg-[#f85559]"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <div class="border-2 p-12 rounded-lg">
+            <div class="space-y-3 text-center">
+              <img class="mx-auto" src="./images/fruit9.png" alt="" />
+              <h3 class="font-bold">14.90$ - 21.10$</h3>
+              <hr />
+              <p class="">Banana</p>
+            </div>
+            <div class="mt-6 text-center">
+              <i class="fa-solid fa-star text-[#F85559]"></i>
 
-    
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+              <i
+                class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+              ></i>
+              <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
+
+              <div class="mt-8">
+                <button
+                  class="text-[#f85559] font-bold"
+                  onclick="my_modal_4.showModal()"
+                >
+                  Details
+                </button>
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center">
+                      <img class="" src="./images/fruit9.png" alt="" />
+                    </div>
+                    <h3 class="font-bold text-lg mt-3 lg:mt-6">Banana</h3>
+                    <p class="lg:py-4">
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                    <i class="fa-solid fa-star text-[#F85559]"></i>
+
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i class="fa-solid fa-star text-[#F85559] opacity-60"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke text-[#F85559] opacity-60"
+                    ></i>
+                    <i class="fa-regular fa-star text-[#F85559] opacity-60"></i>
+                    <div class="mt-3 lg:mt-10">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="px-7 py-4 lg:py-5 rounded-lg border-solid border-2 border-[#f85559] mr-8"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="px-7 py-4 lg:py-5 rounded-lg text-white bg-[#f85559]"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button
+            class="bg-[#f85559] text-white px-7 py-5 rounded-lg font-bold mb-20"
+          >
+            Shop All
+          </button>
+        </div>
+      </section>
+
 
       <div class=" min-h-96 py-36 rounded-lg shadow-2xl py-20 overflow-hidden relative">
         <img class="absolute inset-0 h-full w-full object-cover" src="./images/banner1.png" alt="" />
